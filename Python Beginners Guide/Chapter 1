@@ -1,0 +1,89 @@
+#Beginners Guides, English & Chinese Languages Guide
+# Chapter 1：Strings
+
+print("Hello World")
+# or
+print('Hello World')
+# This is used to print text. You can use either " or '
+# 这个是打印出文本 可以是【“】也可以是【‘】
+
+print(123)
+# This is used to output numbers. Leaving out " or ' tells the computer that it’s not text. So we can use it for operations like + - × ÷.
+# 这是打出数字，不放怕【“】或【‘】就是告诉电脑这个不是文本。所以我们就可以拿来做类似【+ - × ÷】
+
+message = "Hello World"
+print(message)
+# This sets message as a variable, which can be named with any word.
+# Then we tell the computer what value (text) this variable represents, and use print() to display it.
+# 这个是设定【message】为【variable】，这个【variable】可以命名为任何单词。然后再告诉电脑这个【variable】是代表什么文本【value】，再用【print()】出来
+
+message = "Hello World,\nI love this world"
+print(message)
+#or
+message = """Hello World,
+I love this world"""
+print(message)
+# These are two ways to create a blank line. The first is by using \n.
+# The second is by writing """ (triple quotes), which allows you to add line breaks freely.
+# 这个是两种方式来空行，第一个是可以用【\n】。
+# 第二个是把【“】写成三次，这样就可以随意的空行
+
+message = "Hello World"
+print(len(message))
+# len is a function used to count how many characters are in a piece of text.
+# It’s often used for security or restriction purposes — for example, to set a minimum or maximum number of characters.
+# 【len】是一种element拿来计算文本有几个字。大多数这种是拿来放在秘密限制方面。比如最少几个字、最多几个字，就可以用【len】。
+
+message = "Hello World"
+print(message[0])
+# This lets the computer tell me which letter is at a specific position in the message.
+# 这个是让电脑告诉我这个message里面的第几个字是什么字母
+print(message[:5])
+# You can write it as [0:5] or [:5], and it will display the characters starting from the beginning up to (but not including) position 5.
+# 可以写成【0：5】或【：5]这样他就会从最开始写到5以下
+print(message[6:])
+# You can write it as [6:], and it will display the characters starting from the sixth one all the way to the end.
+# 这样可以写成【6:】这样就会从第六个开始到最后一个
+
+message = "Hello World"
+print(message.lower())
+# This converts all the text to lowercase letters.
+# 这个是把文本全部变小字母
+print(message.upper())
+# This converts all the text to uppercase letters.
+# 这个是把文本全部变大字母
+
+message = "Hello World"
+print(message.count("Hello"))
+# This counts how many times the word or letter you entered appears in the text.
+# 这个是找出你输入的单词或字母总共有几个
+print(message.find("World"))
+# This finds the position where the word you entered begins. However, if the word isn’t found in the text, it will show -1.
+# 这个是找出你输入的单词从第几个开始，但是如果单词没有在里面的他就会显示【-1】
+
+message = "Hello World"
+new_message = message.replace("World", "Universe")
+print(new_message)
+# This to replace the old text to the new text you want to change. The variable name can be the same or different.
+# 这个是把文本替换成新文本,variable可以是一样的名词也可以是不一样的
+
+greeting = "Hello"
+name = "Jackson"
+message = greeting + " " + name + "!"
+print(message)
+# This combines variables together to form a single text sentence.
+# 这个是把variable和variable组成一个文本句子
+
+name = "Jackson"
+item = "mango"
+count = 3
+message = f'{name.upper()} is having {count} {item}!'
+print(message)
+# F-strings make combining strings and variables very clear and simple.
+# They “format” and embed the values of the variables — name ("Jackson"), count (3), and item ("mango") — into the string, forming a complete sentence.
+# You can also include .upper() or .lower() here.
+# F-string 使得字符串和变量的结合变得非常直观和简洁，它将变量 name ("Jackson")、count (3) 和 item ("mango") 的值，“格式化”并嵌入到字符串文本中，形成了最终的完整句子
+# 这里也可以把【.upper() 或 .lower()】放进来
+
+# 【If you need more information, you can directly type print(help(str)).】
+# 需要更多信息可以直接在编辑器上打【print(help(str))】
