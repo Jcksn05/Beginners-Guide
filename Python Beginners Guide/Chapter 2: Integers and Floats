@@ -1,0 +1,73 @@
+# Beginner Guide, English And Chinese Languages Guide
+# Chapter 2: Integers and Floats
+
+# Part 1:
+# Arithmetic Operators:
+# Addition:       3 + 2
+# Subtraction:    3 - 2
+# Multiplication: 3 * 2
+# Division:       3 / 2
+# Floor Division: 3 // 2
+# Exponent:       3 ** 2
+# Remainder:      3 % 2
+
+#Simple Example
+print(1 + 1)  #print: 2
+print(2 - 1)  #print: 1
+print(3 * 3)  #print: 9
+print(4 / 2)  #print: 2.0
+print(5 // 3) #print: 1
+print(5 ** 3) #print:125
+print(5 % 3)  #print:2
+
+num = 1
+num = num + 1
+print(num)
+# or
+num += 1
+print(num)
+# num += 1 performs the exact same operation as the full version on the previous line, but it’s shorter and more readable.
+# All arithmetic operators can be used this way.
+# 【num += 1】这行代码执行了与上一行完整形式完全相同的操作，但更简洁、更具可读性。所有Arithmetic Operators都可以用。
+
+print(abs(-25)) # print: 25
+# The abs() function’s only purpose is to turn any negative number into a positive number, whether it’s an integer or a decimal.
+# 【abs（）】这种代码的唯一用处就是把所有的负数变成正数，不管该数字是整数还是小数点。
+
+print(round(2.85)) #print：3
+# The round() function is used to round numbers to the nearest whole number.
+# 【round()】这个代码就是四舍五入
+# or
+print(round(2.85, 1)) #print：2.9
+# If you add 【,1】 beside it — like round(number, 1) — it tells the computer to only round the number to one decimal place.
+# 这个在旁边多加一个【，1】就是让电脑只四舍五入小数点的最后个数字
+
+# Part 2:
+# Comparisons:
+# Equal:            3 == 2
+# Not Equal:        3 != 2
+# Greater Than:     3 > 2
+# Less Than:        3 < 2
+# Greater or Equal: 3 >= 2
+# Less or Equal:    3 <= 2
+# This makes the computer check whether something is True or False.
+# 这个是让电脑检查是True还是False
+
+# Simple Example
+num_1 = 2
+num_2 = 3
+print(num_1 == num_2) #print: False
+print(num_1 != num_2) #print: True
+print(num_1 > num_2)  #print: False
+print(num_1 < num_2)  #print: True
+print(num_1 >= num_2) #print: False
+print(num_1 <= num_2) #print: True
+
+num_1 = "123"
+num_2 = "456"
+num_1 = int(num_1)
+num_2 = int(num_2)
+print(num_1 + num_2) #print: 579
+# int() converts numbers that are written as text into actual numbers. 
+# Without int(), if you just type print(num_1 + num_2) would just be treated as text, not as a real number.
+# 【int()】就是把原本是文本的数字转换成数字。如果没有【int()】就会变成123456，因为电脑不知道这个是数字只会判定成文本。
